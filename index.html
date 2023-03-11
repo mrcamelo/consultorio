@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dra. Debóra Araújo</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Início</a></li>
+				<li><a href="#serviços1">Serviços</a></li>
+				<li><a href="#sobrenos">Sobre</a></li>
+				<li><a href="#agendeagora">Contato</a></li>
+			</ul>
+		</nav>
+        
+		<br>
+        <img src="logo.png" alt="Logomarca">
+         <section class="logo2">
+        <img src="img/logo2.png" alt="Logomarca2">
+    </section>
+		<p>Seu sorriso em boas mãos</p>
+	</header>
+    
+	<section class="hero">
+		<h2>Bem-vindo(a) ao nosso consultório</h2>
+		<p>A Dra. Debóra Araújo é uma profissional dedicada e experiente, que se preocupa em oferecer o melhor atendimento aos seus pacientes. Com equipamentos de última geração e uma equipe qualificada, estamos prontos para cuidar da saúde bucal de toda a sua família.</p>
+		<a href="#agendeagora" class="button">Agende sua consulta</a>
+	</section>
+
+	<section class="services" id="serviços1"> 
+		<h3>Nossos serviços</h3>
+		<ul>
+			<li>Tratamento de cáries</li>
+			<li>Extração de dentes</li>
+			<li>Implantes dentários</li>
+			<li>Limpeza e clareamento dental</li>
+			<li>Ortodontia</li>
+			<li>Restaurações dentárias</li>
+		</ul>
+        <section class="gallery">
+            
+            <div class="slideshow-container">
+              <div class="mySlides fade">
+                <img src="img/imagem1.jpg" alt="Imagem 1">
+              </div>
+          
+              <div class="mySlides fade">
+                <img src="img/imagem2.jpg" alt="Imagem 2">
+              </div>
+          
+              <div class="mySlides fade">
+                <img src="img/imagem3.jpg" alt="Imagem 3">
+              </div>
+          
+              <div class="mySlides fade">
+                <img src="img/imagem4.jpg" alt="Imagem 4">
+              </div>
+          
+              <div class="mySlides fade">
+                <img src="img/imagem5.jpg" alt="Imagem 5">
+              </div>
+          
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+          </section>
+          
+	</section>
+
+	<section class="about" id="sobrenos">
+		<h3>Sobre nós</h3>
+		<p>A Dra. Debóra Araújo é uma dentista dedicada e apaixonada pela profissão, que se preocupa em oferecer o melhor tratamento aos seus pacientes. Com experiência na área odontológica, ela é reconhecida pelo seu comprometimento e dedicação em proporcionar um sorriso saudável e bonito a todos os seus pacientes.</p>
+	</section>
+	
+	<section class="contact">
+       
+          
+		<h3>Entre em contato</h3>
+        <p>Para agendar uma consulta ou tirar dúvidas sobre nossos serviços, entre em contato conosco pelos canais abaixo:</p>
+        <section class="appointment" id="agendeagora">
+            <h3>Agende sua consulta</h3>
+            <form action="enviar.php" method="POST">
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome" required>
+          
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" required>
+          
+              <label for="telefone">Telefone:</label>
+              <input type="tel" id="telefone" name="telefone" required>
+          
+              <label for="data">Data:</label>
+              <input type="date" id="data" name="data" required>
+          
+              <label for="horario">Horário:</label>
+              <input type="time" id="horario" name="horario" required>
+          
+              <label for="mensagem">Mensagem:</label>
+              <textarea id="mensagem" name="mensagem"></textarea>
+          
+              <button type="submit">Enviar</button>
+            </form>
+          </section>
+          
+		
+		<ul><br><br>
+			<li><strong>Endereço:</strong> Rua G, 836, Loteamento dos Expedicionario 2, Fortaleza-CE</li>
+			<li><strong>Telefone:</strong> (85) 99647-1030</li>
+			<li><strong>E-mail:</strong> contato@dra-debora-araujo.com.br</li>
+            <li><a href="https://www.instagram.com/dradeboraaraujo/">Siga-nos no Instagram</a>
+            </li>
+		</ul>
+        <div style="width: 100%; height: 400px;">
+            <iframe src="https://www.google.com/maps/embed/v1/place?key=SUA_CHAVE_DE_API&q=PLACE_ID"
+              width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+          
+	</section>
+	
+	<footer>
+		<p>&copy; 2023 Dra. Debóra Araújo - Todos os direitos reservados.</p>
+	</footer>
+    <script src="script.js"></script>
+    <script>
+        function initMap() {
+          var location = {lat: -23.563773, lng: -46.654663}; // coordenadas do endereço
+      
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: location
+          });
+      
+          var marker = new google.maps.Marker({
+            position: location,
+            map: map
+          });
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=q2UhBfPNao17o75f7" async defer></script>
+      
+</body>
+</html>
